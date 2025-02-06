@@ -1,0 +1,240 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1f1e1e;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+.imagen-redonda {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+  }
+  .imagen-redonda-contact {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+  }
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 80px);
+	background-image: url("./Images/Tarjeta\ de\ presentacion\ Miguel.png");
+	background-size:cover ;
+    background-position: center;
+}
+
+.hero h1 {
+	font-size: 80px;
+    color: #000000;
+}
+.hero h2{
+    font-size: 60px;
+    color: #070707;
+}
+.hero p {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #b20dd3;
+}
+
+nav {
+	background: #fff;
+	height: 80px;
+	box-shadow: rgba(38, 10, 197, 0.2) 0px 8px 24px;
+	display: flex;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+}
+
+nav a {
+	flex: 1;
+	height: 100%;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color:  #6441a5;
+    background-color:#0c0c0c;
+	transition: .2s ease-in-out all;
+	font-weight: 600;
+    font-family: Arial;
+}
+
+nav a:hover {
+	background:#1f1e1e;
+}
+
+nav .indicador {
+	width: 0px;
+	height: 7px;
+	background: #113cfc;
+	position: absolute;
+	bottom: 0;
+	transition: .3s ease-out all;
+	/* transform: translate(-500px); */
+}
+
+.seccion {
+	min-height: 100vh;
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding-top: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.seccion .card {
+	background: #fff;
+	height: auto;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.seccion h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.seccion p {
+	line-height: 38px;
+	margin-bottom: 40px;
+	color: #494949;
+	font-size: 20px;
+}
+hr{
+	border: rgba(92, 76, 236, 0.2) 5px solid;
+}
+
+.seccion img {
+	width: 25%;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+
+.slidebar{
+    padding: 10px;
+    background-color: #6441a5 ;
+    width: 25%;
+    height: auto;    
+    float: left;
+    margin: 10px;
+    border-radius: 5px;
+}
+.slidebar h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:#000;
+}
+.slidebar p{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color:#000;
+}
+.slidebar img{
+    width: 90%;
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+table{
+    background-color: #1f1e1e;
+    border-radius: 5px;
+    border: rgba(250, 3, 188, 0.2) 5px solid;
+    color:#f0f0f0;
+    padding: 10px;
+
+}
+table td{
+    border-radius: 5px;
+    border: rgba(250, 3, 188, 0.2) 5px solid;
+    padding: 10px;
+}
+table th{
+    padding: 10px;
+}
+li{
+    line-height: 38px;
+	margin-bottom: 40px;
+	color: #494949;
+	font-size: 20px;
+}
+.a-contactame {
+	width: 200px; 
+	height: 50px; 
+	display: inline-block;
+	text-align: center; 
+	line-height: 50px; 
+  }
+.footer{
+	background: #6441a5;
+    height: 80px;
+    box-shadow: rgba(250, 3, 188, 0.2) 0px 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos del botón */
+#btnTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #6441a5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none; /* Oculto al inicio */
+}
+
+#btnTop:hover {
+    background: #6441a5;
+}
+
+@media screen and (max-width: 800px) {
+	nav a {
+		font-size: 14px;
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	nav a {
+		font-size: 12px;
+	}
+}
