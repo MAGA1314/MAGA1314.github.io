@@ -41,7 +41,7 @@ a {
 	align-items: center;
 	justify-content: center;
 	height: calc(100vh - 80px);
-	background-image: url("./Images/Tarjeta\ de\ presentacion\ Miguel.png");
+	background-image: url("images/Tarjeta\ de\ presentacion\ Miguel.png");
 	background-size:cover ;
     background-position: center;
 }
